@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -209,13 +210,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2681513, y: -0, z: -0, w: 0.9633769}
-  m_LocalPosition: {x: 3.2, y: 18.6, z: -37.8}
+  m_LocalRotation: {x: -0.0008726463, y: -0.98273313, z: 0.0076178424, w: 0.18486968}
+  m_LocalPosition: {x: 1.78, y: 1.78, z: 3.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 31.109, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.839, y: -158.69, z: 0.26}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +261,26 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88392f849303d14a972b8115bf65e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 330585545}
+  target: {fileID: 2124302368}
+  lowDetailModel: {fileID: 2124302365}
+  mediumDetailModel: {fileID: 2124302366}
+  highDetailModel: {fileID: 2124302367}
+  zoomSpeed: 10
+  minFov: 20
+  maxFov: 60
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,15 +1025,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1051908938}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 65702495048144492, guid: f0201aff3e1146149827a56d1f11dc48,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2124302372}
-    - targetCorrespondingSourceObject: {fileID: 65702495048144492, guid: f0201aff3e1146149827a56d1f11dc48,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2124302371}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0201aff3e1146149827a56d1f11dc48, type: 3}
 --- !u!4 &2124302364 stripped
 Transform:
@@ -1044,58 +1057,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2124302363}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2124302369 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 65702495048144492, guid: f0201aff3e1146149827a56d1f11dc48,
-    type: 3}
-  m_PrefabInstance: {fileID: 2124302363}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &2124302370 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: -1853094968961178454, guid: f0201aff3e1146149827a56d1f11dc48,
-    type: 3}
-  m_PrefabInstance: {fileID: 2124302363}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2124302371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124302369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88392f849303d14a972b8115bf65e41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 2124302370}
-  target: {fileID: 2124302368}
-  lowDetailModel: {fileID: 2124302365}
-  mediumDetailModel: {fileID: 2124302366}
-  highDetailModel: {fileID: 2124302367}
-  zoomSpeed: 10
-  minFov: 20
-  maxFov: 60
---- !u!114 &2124302372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124302369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88392f849303d14a972b8115bf65e41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
-  target: {fileID: 0}
-  lowDetailModel: {fileID: 0}
-  mediumDetailModel: {fileID: 0}
-  highDetailModel: {fileID: 0}
-  zoomSpeed: 5
-  minFov: 20
-  maxFov: 60
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
