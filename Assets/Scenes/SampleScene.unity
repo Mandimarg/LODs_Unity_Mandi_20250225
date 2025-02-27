@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
-  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -261,28 +260,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &330585548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b30ac71047df94bacdbec197c8a774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 330585545}
-  target: {fileID: 2124302368}
-  lowDetailModel: {fileID: 2124302365}
-  mediumDetailModel: {fileID: 2124302366}
-  highDetailModel: {fileID: 2124302367}
-  zoomSpeed: 3
-  zoomDistances:
-  - 10
-  - 20
-  - 30
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,17 +855,17 @@ PrefabInstance:
     - target: {fileID: -2021178655527167927, guid: f0201aff3e1146149827a56d1f11dc48,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4
+      value: -0.38
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: f0201aff3e1146149827a56d1f11dc48,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.4
+      value: 2.72
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: f0201aff3e1146149827a56d1f11dc48,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.16
+      value: 3.44
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: f0201aff3e1146149827a56d1f11dc48,
         type: 3}
@@ -1027,7 +1004,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1051908938}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 65702495048144492, guid: f0201aff3e1146149827a56d1f11dc48,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2124302376}
   m_SourcePrefab: {fileID: 100100000, guid: f0201aff3e1146149827a56d1f11dc48, type: 3}
 --- !u!4 &2124302364 stripped
 Transform:
@@ -1035,30 +1016,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2124302363}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2124302365 stripped
+--- !u!1 &2124302369 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2257180161721524841, guid: f0201aff3e1146149827a56d1f11dc48,
+  m_CorrespondingSourceObject: {fileID: 65702495048144492, guid: f0201aff3e1146149827a56d1f11dc48,
     type: 3}
   m_PrefabInstance: {fileID: 2124302363}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2124302366 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7946891971510481775, guid: f0201aff3e1146149827a56d1f11dc48,
-    type: 3}
-  m_PrefabInstance: {fileID: 2124302363}
+--- !u!95 &2124302376
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2124302367 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6722811552849478843, guid: f0201aff3e1146149827a56d1f11dc48,
-    type: 3}
-  m_PrefabInstance: {fileID: 2124302363}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2124302368 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f0201aff3e1146149827a56d1f11dc48,
-    type: 3}
-  m_PrefabInstance: {fileID: 2124302363}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124302369}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 08e3da21b97976a4e958235193b533a0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
