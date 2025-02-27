@@ -270,7 +270,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88392f849303d14a972b8115bf65e41, type: 3}
+  m_Script: {fileID: 11500000, guid: 38b30ac71047df94bacdbec197c8a774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 330585545}
@@ -278,9 +278,11 @@ MonoBehaviour:
   lowDetailModel: {fileID: 2124302365}
   mediumDetailModel: {fileID: 2124302366}
   highDetailModel: {fileID: 2124302367}
-  zoomSpeed: 10
-  minFov: 20
-  maxFov: 60
+  zoomSpeed: 3
+  zoomDistances:
+  - 10
+  - 20
+  - 30
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
